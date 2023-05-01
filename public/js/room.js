@@ -85,32 +85,3 @@ let hideDisplayFrame = () => {
 
 displayFrame.addEventListener('click', hideDisplayFrame)
 
-function whiteboard() {
-  // Get the query string from the URL
-  const queryString = window.location.search;
-
-  // Parse the query string to get the search parameters
-  const searchParams = new URLSearchParams(queryString);
-
-  // Get the value of the 'room' parameter
-  const roomId = searchParams.get('room');
-
-  
-  let link = "https://white-board-av.netlify.app/?room=" + roomId;
-
-  window.open(link, "_blank"); // Replace with the URL of the new page
-}
-
-function texteditor() {
-  const queryString = window.location.search;
-
-  // Parse the query string to get the search parameters
-  const searchParams = new URLSearchParams(queryString);
-
-  // Get the value of the 'room' parameter
-  const roomId = searchParams.get('room');
-
-  
-  let link = "https://texteditorav.netlify.app/";
-  window.open(link, "_blank"); // Replace with the URL of the new page
-}
