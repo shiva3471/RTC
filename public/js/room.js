@@ -1,6 +1,3 @@
-import TextEditor from "./TE/client/TextEditor.js";
-import Board from "./WB/whiteboard-collab/src/components/board/Board.jsx";
-import ReactDOM from 'react-dom';
 let messagesContainer = document.getElementById('messages');
 messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
@@ -11,13 +8,6 @@ const chatContainer = document.getElementById('messages__container');
 const chatButton = document.getElementById('chat__button');
 
 let activeMemberContainer = false;
-
-
-
-
-
-
-
 
 memberButton.addEventListener('click', () => {
   if (activeMemberContainer) {
@@ -84,4 +74,23 @@ let hideDisplayFrame = () => {
 }
 
 displayFrame.addEventListener('click', hideDisplayFrame)
+
+
+
+// document.getElementById('myForm').addEventListener('submit', function(event) {
+//   event.preventDefault(); // Prevent form from submitting
+//   // Perform form validation and data processing here
+
+//   // Redirect to desired URL
+//   window.location.href = 'whiteboard.html'; // Replace with desired URL
+// });
+
+// JavaScript code
+function whiteboard() {
+  window.open("http://localhost:3001/", "_blank"); // Replace with the URL of the new page
+}
+
+function texteditor() {
+  window.open("http://localhost:3000/documents/690402cc-0e45-4b64-9e17-f6bc7e96b108", "_blank"); // Replace with the URL of the new page
+}
 
